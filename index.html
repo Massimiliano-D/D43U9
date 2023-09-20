@@ -1,0 +1,168 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TypeScript</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-body-secondary">
+    <nav class="navbar bg-body-secondary">
+      <div class="container-fluid d-flex justify-content-center">
+        <a class="navbar-brand" href="#">
+          <img
+            src="./assets/typescript.png"
+            alt="Logo"
+            width="30"
+            height="30"
+            class="d-inline-block align-items-center"
+          />
+        </a>
+      </div>
+    </nav>
+    <div class="text-center">
+      <div>
+        <div class="mt-5">
+          <h1>TypeScript</h1>
+          <div class="ms-4 mt-3">
+            <h4>Cos'è:</h4>
+            <p>
+              TypeScript è un linguaggio di programmazione open-source sviluppato da Microsoft. È una versione tipizzata
+              di
+              <br />
+              JavaScript, il che significa che aggiunge tipi statici al linguaggio, rendendo il codice più sicuro e
+              <br />
+              leggibile.
+            </p>
+          </div>
+          <div class="ms-4 mt-3">
+            <h4>A cosa serve:</h4>
+            <p>
+              TypeScript serve a migliorare la manutenibilità e la robustezza del codice JavaScript, consentendo ai
+              <br />
+              programmatori di dichiarare tipi per le variabili, i parametri delle funzioni e le proprietà degli
+              oggetti.
+            </p>
+          </div>
+          <div class="ms-4 mt-3">
+            <h4>Che problema risolve:</h4>
+            <p>
+              Risolve problemi comuni in JavaScript come errori di tipo, comportamenti imprevisti e debugging
+              complicato.
+              <br />
+              Aiuta anche a migliorare la collaborazione all'interno del team di sviluppo.
+            </p>
+          </div>
+        </div>
+        <div class="mt-5">
+          <h2>Il compilatore TypeScript</h2>
+          <div class="ms-4 mt-3">
+            <h4>Perché è necessario:</h4>
+            <p>
+              TypeScript utilizza un compilatore per convertire il codice TypeScript in JavaScript, poiché i browser e
+              <br />
+              l'ambiente di esecuzione JavaScript nativo non comprendono direttamente il TypeScript.
+            </p>
+          </div>
+          <div class="mt-5">
+            <h2>Type Inference</h2>
+            <div class="ms-4 mt-3">
+              <h4>Cos'è:</h4>
+              <p>
+                TypeScript è dotato di un sistema di inferenza dei tipi che può dedurre automaticamente il tipo di una
+                <br />
+                variabile in base al valore assegnato.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <main class="mt-5 mb-5">
+        <h2 class="my-5">Utilizzi Pratici</h2>
+        <div class="containe">
+          <div class="row row-cols-3 g-3">
+            <div class="card ms-4 col bg-dark" style="width: 30%">
+              <img src="./assets/any.png" class="card-img-top" style="min-height: 349" alt="..." />
+              <div class="card-body">
+                <h6 class="card-text text-white">Il tipo 'any':</h6>
+                <p class="card-text text-white">
+                  Il tipo 'any' è utilizzato per rappresentare una variabile di cui non si conosce il tipo in fase di
+                  compilazione. È un tipo "escape" che consente di bypassare il sistema di tipizzazione di TypeScript.
+                  Tuttavia, il suo utilizzo dovrebbe essere evitato quando possibile, poiché può portare a errori di
+                  runtime.
+                </p>
+              </div>
+            </div>
+            <div class="card ms-4 col bg-dark" style="width: 30%">
+              <img src="./assets/union.png" class="card-img-top" style="min-height: 349" alt="..." />
+              <div class="card-body">
+                <h6 class="card-text text-white">Il tipo Union:</h6>
+                <p class="card-text text-white">
+                  Il tipo Union consente di dichiarare una variabile con più tipi possibili. Ad esempio, `number |
+                  string` rappresenta una variabile che può essere di tipo numero o stringa.
+                </p>
+              </div>
+            </div>
+            <div class="card ms-4 col bg-dark" style="width: 30%">
+              <img src="./assets/tupla.png" class="card-img-top" style="min-height: 349" alt="..." />
+              <div class="card-body">
+                <h6 class="card-text text-white">Il tipo Tuple:</h6>
+                <p class="card-text text-white">
+                  Una tupla è un tipo di dato in TypeScript che consente di definire un array di elementi con tipi
+                  specifici e un numero fisso di elementi. Ad esempio, [string, number] rappresenta una tupla con una
+                  stringa seguita da un numero.
+                </p>
+              </div>
+            </div>
+            <div class="card ms-4 col bg-dark" style="width: 30%">
+              <img src="./assets/interfacce.png" class="card-img-top" style="min-height: 349" alt="..." />
+              <div class="card-body">
+                <h6 class="card-text text-white">Le Interfacce in TS:</h6>
+                <p class="card-text text-white">
+                  Le interfacce sono utilizzate per dichiarare contratti o "forme" degli oggetti. Definiscono la
+                  struttura di un oggetto, inclusi i nomi e i tipi delle sue proprietà. Le classi possono implementare
+                  interfacce per garantire che soddisfino determinati requisiti.
+                </p>
+              </div>
+            </div>
+            <div class="card ms-4 col bg-dark" style="width: 30%">
+              <img src="./assets/vs.png" class="card-img-top" style="min-height: 349" alt="..." />
+              <div class="card-body">
+                <h6 class="card-text text-white">Types vs Interfaces:</h6>
+                <p class="card-text text-white">
+                  Entrambe le interfacce e i tipi (types) possono essere utilizzati per dichiarare forme di oggetti o
+                  tipi personalizzati. La principale differenza è che le interfacce sono estendibili (possono essere
+                  estese da altre interfacce) e possono essere implementate dalle classi, mentre i tipi sono più
+                  flessibili e possono rappresentare unioni, intersezioni e altri tipi più complessi.
+                </p>
+              </div>
+            </div>
+            <div class="card ms-4 col bg-dark" style="width: 30%">
+              <img src="./assets/generics.png" class="card-img-top" style="min-height: 349" alt="..." />
+              <div class="card-body">
+                <h6 class="card-text text-white">I Generics:</h6>
+                <p class="card-text text-white">
+                  I generics consentono di scrivere codice in TypeScript che è parametrico rispetto ai tipi. Questo
+                  permette di scrivere funzioni e classi che lavorano con vari tipi di dati in modo flessibile, senza
+                  dover specificare il tipo in anticipo. Sono indicati utilizzando il simbolo &lt;T&#62;, dove 'T' è una
+                  variabile di tipo generico. Ad esempio, Array&lt;T&#62; rappresenta un array generico in TypeScript.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="indsx.js"></script>
+  </body>
+</html>
